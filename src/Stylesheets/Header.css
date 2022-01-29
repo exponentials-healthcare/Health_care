@@ -1,15 +1,5 @@
-#news_nav{
+.bgimg{
     margin-top:0%;
-    margin-left:90%;
-    position: relative;
-    color: white;
-}
-#profile_nav{
-    margin-top: 0%;
-    margin-left: 95%;
-    position: relative;
-    color: white;
-}
-.nav{
-    background-color: black;
+    width:101%;
+    margin-left: -1%;
 }
