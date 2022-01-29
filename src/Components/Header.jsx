@@ -23,7 +23,7 @@ function Header () {
                 </NavDropdown> */}
                 {/* </Nav> */}
                 <Nav>
-                <Nav.Link href="#news">General news</Nav.Link>
+                <Nav.Link href="#news">News</Nav.Link>
                 <Nav.Link  href="#profile">
                     Profile
                 </Nav.Link>
