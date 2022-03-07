@@ -1,7 +1,7 @@
 import {React,useState,useEffect} from 'react';
 import frontpg from '../images/frontpg.jpg'
 import '../Stylesheets/Header.css';
-import mentalHealth from '../images/mental_health1.png'
+import fitness from '../images/fitnes.jpg'
 import nutrition from '../images/nutrition1.jpg'
 import covid from '../images/covid2.png'
 import { Container } from 'react-bootstrap';
@@ -120,14 +120,7 @@ function HomeContent() {
 
 
     <Row className='list' lg={3} sm={1}>
-      <Col>
-      <LinkContainer to="/Mental">
-        <Col className="listitem">
-            <img src={mentalHealth} alt="mental" width={200} height={200}></img>
-            <div>Mental Health</div>
-        </Col>
-      </LinkContainer>
-      </Col>
+    
       <Col>
       <a href="#nutrition">
         <Col className='listitem'>
@@ -135,6 +128,14 @@ function HomeContent() {
             <div>Nutrition</div>
           </Col>
         </a>
+      </Col>
+      <Col>
+      <LinkContainer to="/Mental">
+        <Col className="listitem">
+            <img src={fitness} alt="mental" width={200} height={200}></img>
+            <div>Fitness</div>
+        </Col>
+      </LinkContainer>
       </Col>
       <Col>
       <LinkContainer to="/Covid">

@@ -5,6 +5,7 @@ import { Col } from 'react-bootstrap';
 import Footer from './Footer';
 import Header from './Header';
 import '../Stylesheets/Content.css';
+import covidbg from '../images/covidbg.png';
 
 
 
@@ -43,15 +44,15 @@ function Covid(){
         //   <br></br>
         //   </Col> 
         //   </Container>
-        <Col >
-            <Row className='news' >
+        <Col className='news' sm={1}>
+            
              
               <a href={eachNews.source}>
               <div className='news_title'><h4>{eachNews.title}</h4></div>
               </a>
              
               <br></br>
-            </Row> 
+            <br></br>
             <br></br>
             </Col>
            
@@ -65,8 +66,21 @@ function Covid(){
   return(
     <div>
      <Header />
+     <div className='extra'>
+     <img src={covidbg} alt="img" className='covid_bg'></img>
+     <br></br>
+     <br></br>
+     <br></br>
+    
+     
+     </div>
+    
+    
       <Container>
-       <Row lg={2} sm={1}>
+      
+      <br></br>
+      <br></br>
+       <Row lg={3} >
        {
         news.map(renderNews)
        }

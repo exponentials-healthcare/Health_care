@@ -1,3 +1,28 @@
 .news a{
     text-decoration:none;
+    color:black;
+    
+}
+.news:hover{
+     box-shadow:  2px 2px 2px 2px rgba(41, 40, 40, 0.2);
+}
+.mental_bg{
+    width: 97%;
+   
+    margin-left:2%;
+}
+.covid_bg{
+    width: 90%;
+    height: 500px;
+    margin-left:4.7%;
+}
+.extra{
+    background-color: black;
+}
+@media only screen and (max-width: 479px){
+    .covid_bg{
+        width: 90%;
+        height: 350px;
+        margin-left:4.7%;
+    }
 }
