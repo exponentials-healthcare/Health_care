@@ -5,6 +5,9 @@ import {Container} from  'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import '../Stylesheets/Header.css'
 import logo from '../images/logo3.png';
+import {FaHome} from 'react-icons/fa';
+import {BiNews} from 'react-icons/bi';
+import {CgProfile} from 'react-icons/cg'
 import { LinkContainer } from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
 
@@ -32,13 +35,14 @@ function Header () {
                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                 </NavDropdown> */}
                 <LinkContainer to="/">
-                <Nav.Link><div className="linkText">Home</div></Nav.Link>
+             
+                <Nav.Link><div className="linkText"><FaHome></FaHome> Home</div></Nav.Link>
                 </LinkContainer>
                 {/* <LinkContainer to="/#explore"> */}
-                <Nav.Link  href="#explore"><div className="linkText">News</div></Nav.Link>
+                <Nav.Link  href="#explore"><div className="linkText"><BiNews></BiNews> News</div></Nav.Link>
                 {/* </LinkContainer> */}
                 <LinkContainer to="/SignIn">
-                <Nav.Link  ><div className="linkText">Profile</div></Nav.Link>
+                <Nav.Link  ><div className="linkText"><CgProfile></CgProfile> Profile</div></Nav.Link>
                 </LinkContainer>  
                 </Nav>
             </Navbar.Collapse>

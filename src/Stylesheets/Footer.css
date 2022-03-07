@@ -2,7 +2,7 @@
     background-color: black;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-bottom: -5%;
+    /* margin-bottom: -5%; */
     text-decoration: none;
     
 }
@@ -32,10 +32,60 @@ ul{
     margin-top: 25%;
     margin-left: 15%;
     font-size: 20px;
+    color:white
 }
 #logo{
     border-radius: 100%;
+    color: white;
 }
 #quick_links,#frontend,#backend{
     color: #FBA502;
+}
+.icons_footer{
+   
+    padding: 1%;
+    font-size:180%;
+    cursor: pointer;
+    
+}
+.icons{
+    margin-top:3%;
+    margin-left: 23%;
+    color: #FBA502;
+    
+}
+.icons_footer:hover{
+    color:white;
+}
+
+@media only screen and (max-width: 479px)
+{
+    .footer{
+        padding-top: 2%;
+        display:block;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        justify-content: center;
+        margin-bottom: 0%;
+     
+    }
+    .quick_links{
+        margin: 15%;
+        
+        
+    }
+    .frontend{
+        margin: 15%;
+    
+    }
+    .backend{
+        margin: 15%;
+    
+    }
+    .logo{
+        margin-top: 10%;
+       
+        font-size: 20px;
+        color:white
+    }
 }
