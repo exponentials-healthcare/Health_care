@@ -2,15 +2,13 @@ import {React,useState,useEffect} from 'react';
 import frontpg from '../images/frontpg.jpg'
 import '../Stylesheets/Header.css';
 import fitness from '../images/fitnes.jpg'
-import nutrition from '../images/nutrition1.jpg'
-import covid from '../images/covid2.png'
+import globalnews1 from '../images/globalnews1.png';
+import covid from '../images/covid2.png';
 import { Container } from 'react-bootstrap';
-import Footer from './Footer';
-import Header from './Header';
+
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import {MdExpandMore} from 'react-icons/md';
-import {Link} from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
 const axios = require('axios')
@@ -75,7 +73,7 @@ function HomeContent() {
   return (
     
   <div className='bg'>
-  <Header />
+ 
     <img src={frontpg} alt="home_pic" className="bgimg"></img>
 
     <Container>
@@ -122,12 +120,12 @@ function HomeContent() {
     <Row className='list' lg={3} sm={1}>
     
       <Col>
-      <a href="#nutrition">
+      <LinkContainer to="/GlobalNews">
         <Col className='listitem'>
-            <img src={nutrition} alt="nutrition" width={200} height={200} ></img>
-            <div>Nutrition</div>
+            <img src={globalnews1} alt="global news" width={200} height={200} ></img>
+            <div>Global News</div>
           </Col>
-        </a>
+        </LinkContainer>
       </Col>
       <Col>
       <LinkContainer to="/Mental">
@@ -178,7 +176,7 @@ function HomeContent() {
 <br></br>
 
    </Container>
-   <Footer />
+ 
   </div>
     );
 }

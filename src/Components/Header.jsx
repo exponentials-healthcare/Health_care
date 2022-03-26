@@ -9,9 +9,6 @@ import {FaHome} from 'react-icons/fa';
 import {BiNews} from 'react-icons/bi';
 import {CgProfile} from 'react-icons/cg'
 import { LinkContainer } from 'react-router-bootstrap';
-import {Link} from 'react-router-dom';
-
-
 function Header () {
   return (
   <div>
@@ -39,8 +36,25 @@ function Header () {
                 <Nav.Link><div className="linkText"><FaHome></FaHome> Home</div></Nav.Link>
                 </LinkContainer>
                 {/* <LinkContainer to="/#explore"> */}
-                <Nav.Link  href="#explore"><div className="linkText"><BiNews></BiNews> News</div></Nav.Link>
+                {/* <Nav.Link  href="#explore"><div className="linkText"><BiNews></BiNews> News</div></Nav.Link> */}
                 {/* </LinkContainer> */}
+
+                 <div className="newsicon"><BiNews></BiNews></div>
+                 
+                <NavDropdown title="News" className="linkText" >
+                
+                    <LinkContainer to="/GlobalNews">
+                    <NavDropdown.Item >Global News</NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to="/Mental">   
+                    <NavDropdown.Item >Fitness</NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to="/Covid">
+                    <NavDropdown.Item >Covid</NavDropdown.Item>
+                    </LinkContainer>
+                </NavDropdown>
+                
+
                 <LinkContainer to="/SignIn">
                 <Nav.Link  ><div className="linkText"><CgProfile></CgProfile> Profile</div></Nav.Link>
                 </LinkContainer>  

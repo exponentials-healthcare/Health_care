@@ -65,7 +65,7 @@ function Covid(){
 
   return(
     <div>
-     <Header />
+   
      <div className='extra'>
      <img src={covidbg} alt="img" className='covid_bg'></img>
      <br></br>
@@ -74,10 +74,13 @@ function Covid(){
     
      
      </div>
-    
+     
     
       <Container>
       
+      <br></br>
+      <br></br>
+      <h3 style={{color:"brown"}}>  COVID UPDATES..</h3>
       <br></br>
       <br></br>
        <Row lg={3} >
@@ -86,7 +89,7 @@ function Covid(){
        }
        </Row>
       </Container>
-       <Footer />
+       
       </div>
   
   );

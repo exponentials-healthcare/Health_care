@@ -111,9 +111,9 @@ function Footer() {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/signin">Profile</Link></li>
-          <li><a href="#">Mental Health</a></li>
-          <li><a href="#">Nutrition</a></li>
-          <li><a href="#">Covid Updates</a></li>
+          <li><Link to="/mental">Fitness</Link></li>
+          <li><Link to="/GlobalNews">Global News</Link></li>
+          <li><Link to="/covid">Covid Updates</Link></li>
         </ul>
   </li>
 

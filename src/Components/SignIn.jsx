@@ -5,63 +5,63 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import goo from '../images/goo.jpg'
 
-function Loginform(){
-    return(
-        <diV className="form">
-        <Form>
-          <Form.Control type="text" 
-                        placeholder="USERNAME" 
-                        //className="bg-transparent"
-                        required/>
-                        <br></br>
+// const axios = require('axios')
+// var image;
+
+
+
+  // axios.get('/signin/server.js')
+  //      .then( (response) =>{
+  //   console.log(response.data);
+  //   image =response.data;
+
+  //   // setNews(myNews);
+  // })
+
+
+// function Loginform(){
+
+ 
+
+
+//     return(
+//         <diV className="form">
+//         <Form id="login">
+//           <Form.Control type="text" 
+//                         id="username1"
+//                         placeholder="Email id" 
+//                         autocomplete="off" 
+//                         //className="bg-transparent"
+//                         required/>
+//                         <br></br>
         
-          <Form.Control type="password" 
-                        placeholder="PASSWORD" 
-                        //className="bg-transparent"
-                        required/>
-                        <br></br>
+    //        <Form.Control type="password" 
+    //                     id="password1"
+    //                     placeholder="Password" 
+    //                     autocomplete="off"
+    //                     //className="bg-transparent"
+    //                     required/>
+    //                     <br></br>
        
-        <Button variant="default" type="submit" className="button">
-           SUBMIT
-        </Button>
-      </Form>
-      </diV>
-    );
-}
+    //     <Button variant="default" type="submit" className="button"  >
+    //        SUBMIT
+    //     </Button>
+    //   </Form>
+    //   </diV>
+    // );
+// }
 function Signupform(){
     return(
-        <diV className="form">
-        <Form>
-          <Form.Control type="text" 
-                        placeholder="NAME"
-                        //className="bg-transparent" 
-                        required/>
-                        <br></br>
-        
-          <Form.Control type="email" 
-                        placeholder="EMAIL" 
-                        //className="bg-transparent"
-                        required/>
-                        <br></br>
+      <diV className="form">
+      <img src={goo} alt="img" height={90} width={90}></img>
+         <a href="http://localhost:5000/auth/google"  className="sign_in">  Sign up with google</a>
 
-          <Form.Control type="password" 
-                        placeholder="PASSWORD" 
-                        //className="bg-transparent"
-                        required/>
-                        <br></br>
-       
-          <Form.Control type="password" 
-                        placeholder="CONFIRM PASSWORD" 
-                        //className="bg-transparent"
-                        required/>
-                        <br></br>
-
-        <Button variant="default" type="submit" className="button">
-           SUBMIT
-        </Button>
-      </Form>
+         {/* <img src={image.dp} height={200} width={200} alt="img"></img> */}
+         
       </diV>
+
     );
 }
 function SignIn() {
@@ -77,16 +77,22 @@ function SignIn() {
         onSelect={(k) => setKey(k)}
         className="mb-3 nav-justified"
       >
-        <Tab tabClassName="tab" eventKey="Login" title="LOGIN">
+        {/* <Tab tabClassName="tab" eventKey="Login" title="LOGIN">
           <Loginform/>
-        </Tab>
-        <Tab tabClassName="tab"eventKey="SignUp" title="SIGNUP">
+        </Tab> */}
+        <Tab tabClassName="tab" eventKey="SignUp" title="SIGNUP">
           <Signupform/>
         </Tab>
       </Tabs>
       </div>
+    
+
+     
+
+
       </div>
     );
   }
+  
   
   export default SignIn
